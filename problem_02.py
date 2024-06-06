@@ -2,7 +2,7 @@
 
 def sol(arr, x):
     lo=0
-    hi=len(arr)
+    hi=len(arr)-1
     while lo<= hi:
         mid=lo+ (hi-lo)//2
         if arr[mid] == x:
