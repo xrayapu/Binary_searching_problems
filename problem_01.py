@@ -10,7 +10,7 @@ def sol(arr, x):
             hi = mid-1
 
         
-        elif arr[mid] < x: 
+        else:
             lo= mid +1
 
     return -1
