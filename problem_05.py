@@ -9,7 +9,7 @@ def solution_1(arr, el):
 print(solution_1([1,2,2,2,3,4],1))
 
 # using binary search -> just last occurence and 1st occurence +1 , we will get the count.
-def helper(arr,x):
+def bs_left(arr,x):
     lo=0
     hi=len(arr)-1
     while lo<= hi:
@@ -25,7 +25,7 @@ def helper(arr,x):
         else: lo = mid+1
 
     return -1
-def helper1(arr,x):
+def bs_right(arr,x):
     lo=0
     hi=len(arr)-1
     while lo<= hi:
@@ -42,8 +42,8 @@ def helper1(arr,x):
 
     return -1
 def sol(arr, x):
-    left= helper(arr,x)
-    right= helper1(arr,x)
+    left= bs_left(arr,x)
+    right= bs_right(arr,x)
     return right-left+1
 
 print(sol([1,2,2,2,3,4],2))
