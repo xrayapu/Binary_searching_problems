@@ -1,4 +1,4 @@
-# problem 6: how many times sorted array rotated 
+# problem 6: how many times sorted array rotated , this problems turns into -> what is the index number of the smallest element in the array
 def sol(arr):
     n=len(arr)
     lo,hi=0,len(arr)-1
@@ -17,3 +17,5 @@ def sol(arr):
             lo=mid+1  
 
 print(sol([2,5,6,7,8]))
+
+# output: 0
