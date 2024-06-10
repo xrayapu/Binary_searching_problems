@@ -1,4 +1,4 @@
-# problem 7: searching an element in nearly sorted array.
+# problem 8: searching an element in nearly sorted array.
 
 # [5,10,30,20,40] , tar= 20
 
