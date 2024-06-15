@@ -1,4 +1,4 @@
-# problem 10: find next alphabet in the sorted array, if not return -1
+# problem 11: find next alphabet in the sorted array, if not return -1
 
 # we will try to solve same as celing problem.
 
@@ -7,7 +7,7 @@
 def sol(arr, tar):
     lo,hi=0,len(arr)-1
     ans=''
-    if tar >= arr[hi] : 
+    if tar >= arr[hi] : # [a,b,f,h] , tar: (h ,or higher value ) , output-> a
         return arr[0]
     while lo<=hi:
         #print(lo,hi)
